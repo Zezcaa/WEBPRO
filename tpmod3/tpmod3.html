@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP MOD 3 WEBPRO</title>
+    </head>
+    <body>
+        <h2>Profil Pribadi</h2>
+        <table>
+            <!-- table digunakan untuk menampilkan data yang membutuhkan bentuk tabel, dengan setiap pendefinisian menggunakan tag tr. -->
+            <tr>
+                <th>Foto Profil</th> <!-- th untuk heading table -->
+                <th>Video Perkenalan</th>
+            </tr>
+            <tr>
+                <!-- img untuk menampilkan gambar pada halaman web. -->
+                <td align="center"><img src="foto-profil.jpg" alt="foto-profil" style="width: 50%; height: 50%;"></td>
+                <td align="center">
+                    <!-- video untuk menyisipkan video ke laman web. -->
+                    <video width="50%" height="50%" controls>
+                        <source src="video-perkenalan.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </td> <!-- td untuk pendefinisian kolom -->
+            </tr>
+        </table>
+        <h3>Tentang Saya</h3>
+        <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif.</p>
+        <h3>Keterampilan</h3>
+        <table>    
+            <tr>
+                <th>Keterampilan</th>
+                <th>Tingkat</th>
+            </tr> 
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Mahir</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Menengah</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Pemula</td>
+            </tr>
+        </table>
+
+        <h3>Hubungi Saya</h3>
+        <form action="#"> <!-- form digunakan sebagai wadah untuk menampung data-data dari pengguna. -->
+            <div class="form-group">
+                <label for="nama_id">Nama:</label> <!-- label digunakan untuk mendefinisikan label yang terkait dengan form -->
+                <input type="text" name="nama_input">
+            </div> <!-- tag div digunakan untuk mengelompokkan konten. -->
+            <br> <!-- br digunakan untuk menyisipkan baris baru -->
+
+            <div class="form-group">
+                <label for="email_id">Email:</label>
+                <input type="email" name="email_input">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="pesan">Pesan:</label> <br>
+                <textarea name="pesan" id="pesan" rows="5"></textarea> <!-- textarea digunakan untuk menampilkan elemen untuk input data dalam bentuk paragraf panjang -->
+            </div>
+            <br>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </div>
+        </form>  
+        <p><b>Media Sosial:</b></p>
+        <p>
+            <a href="https://www.linkedin.com/in/zezca-agustin-0713762a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a> |
+            <a href="https://github.com/Zezcaa">GitHub</a> |
+            <a href="https://www.instagram.com/zezcaa?igsh=MXBvMDZ5ZDcyNGY2OQ%3D%3D&utm_source=qr">Instagram</a>
+            <!-- tag a digunakan untuk memungkinkan halaman web berpindah laman menuju laman web yang lain. -->
+        </p>
+    </body>
+</html>
